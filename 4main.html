@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    p
+     {
+      margin: 0;
+      padding: 0;
+    }
+    .layout {
+      margin: 0 auto;
+      width: 600px;
+    }
+
+    .hremind {
+      border-radius: 3px;
+      color: #fff;
+      padding: 1px 16px;
+      margin-top: 30px;
+      line-height: 1.5;
+    }
+    hremind::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .close {
+      float: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+    div.good {
+      background-color: #5bba62;
+    }
+    div.info {
+      background-color: #23a9f6;
+    }
+    div.danger {
+      background-color: #f95b45;
+    }
+    div.warning {
+      background-color: #ffa800;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+      <div class="hremind good">
+          <span class="close">X</span>
+          <h3>恭喜你</h3>
+          <p>你是本周学霸，继续加油吧</p>
+        </div>
+        <div class="hremind info">
+          <span class="close">X</span>
+          <h3>通知</h3>
+          <p>晚上上课，不要忘记</p>
+        </div>
+        <div class="hremind danger">
+          <span class="close">X</span>
+          <h3>天阿鲁</h3>
+          <p>是有多久没看书了</p>
+        </div>
+        <div class="hremind warning">
+          <span class="close">X</span>
+          <h3>警告</h3>
+          <p>学如逆水行舟，不进则退</p>
+        </div>
+  </div>
+</body>
+</html>
