@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+  <style>
+    /* css reset */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    ul,
+    li,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    /* main css */
+    .layout {
+      width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .layout>h1 {
+      color: #666;
+      margin-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+    .container::after {
+      content:'';
+      display: block;
+      clear: both;
+    }
+    .container .card {
+      float: left;
+      box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+      margin-top: 30px;
+    }
+    .container .card img {
+      width: 260px;
+      opacity: 0.75;
+    }
+    ul>li:nth-child(1),
+    ul>li:nth-child(2),
+    ul>li:nth-child(4),
+    ul>li:nth-child(5) {
+      margin-right: 10px;
+    }
+    .description {
+      padding: 16px 1px;
+    }
+  </style>
+<body>
+  <div class="layout">
+    <h1>山水人天地</h1>
+    <ul class="container">
+      <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg"  alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+     <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg" alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+     <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg"  alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+     <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg"  alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+     <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg"  alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+     <li class="card">
+        <img src="https://ws1.sinaimg.cn/large/787b15a7gy1fz2gvlqcblj20go0b4wod.jpg"  alt="landscape">
+        <div>
+          <p class="description">风景如画</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
