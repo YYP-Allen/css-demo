@@ -49,10 +49,17 @@
       width: 260px;
       opacity: 0.75;
     }
-    ul>li:nth-child(1),
+    /* ul>li:nth-child(1),
     ul>li:nth-child(2),
     ul>li:nth-child(4),
     ul>li:nth-child(5) {
+      margin-right: 10px;
+    } */
+    /* 给<ul>添加 负margin-right 是更好的办法，抵消可以最后一个的<li>margin-right */
+    ul {
+      margin-right: -10px;
+    }
+    ul>li {
       margin-right: 10px;
     }
     .description {
