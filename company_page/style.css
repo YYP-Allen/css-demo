@@ -1,0 +1,348 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* common css */
+.clearfix::after {
+  content:'';
+  display: block;
+  clear: both;
+}
+body {
+  font: 16px/1.5 arial,tahoma,Sans-Serif;
+  background-color: #fff;
+  color:#666;
+}
+.layout {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .nav {
+  float: right;
+}
+header ul > li {
+  float: left;
+}
+.button {
+ font-size: 18px;
+ background-color: #f7b23e;
+ color: #fff;
+ padding: 15px 10px;
+ display: inline-block;
+ border-radius:3px;
+}
+.button:hover {
+  opacity: .75;
+}
+/* main css */
+body,
+html {
+  height: 100%;
+}
+header {
+  height: 100%;
+  min-height: 600px;
+  background:url(http://ww1.sinaimg.cn/large/787b15a7gy1fz70od3inhj21gs0yqq94.jpg) no-repeat center center;
+  background-size: cover;
+}
+header .logo {
+  position: relative;
+  color: #f7b23e;
+  font-size:32px ;
+  float: left;
+  margin-top: 10px;
+}
+header .nav {
+  float: right;
+}
+headr .nav > li {
+ float: left;
+ margin: 10px;
+}
+header .nav a {
+  color:#fff;
+  font-size: 16px;
+  display: block;
+  padding: 5px;
+  border-radius: 3px;
+}
+header .nav a:hover {
+  background-color: #f7b23e;
+}
+header .intro {
+  color:#fff;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+} 
+ header .intro h1 {
+  font-size: 40px;
+}
+header .intro h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+header .intro .button {
+  margin-top: 20px;
+}
+section {
+  text-align:center;
+  margin: 0 auto;
+}
+section > h2 {
+  font-size: 40px;
+  margin-top: 80px;
+}
+section > p {
+  margin-top: 10px;
+}
+section > .business .iconfont {
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+  padding: 15px;
+  border-radius: 35px;
+  background-color: #f7b23e;
+}
+ section > .business > li {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding: 10px 20px;
+  margin-top: 30px;
+} 
+section > ul p {
+  margin-top: 10px;
+}
+section ul h3 {
+  margin-top: 20px;
+}
+section .website figure{
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  height: 280px;
+  float: left;
+}
+section .website a {
+  display: block;
+  height: 200px;
+}
+section .website img {
+  width: 100%;
+  height: 100%;
+}
+section .website figcaption {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  /* margin-top: 0px; */
+  padding-top: 10px;
+}
+section .website p {
+  background-color: #fff;
+  color: #666;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+section:nth-child(even) {
+  background-color: #f9f9f9;
+  /* background-size: cover; */
+}
+section .timeline > li::after {
+  content:'';
+  display: block;
+  clear: both;
+}
+section .timeline > li {
+  margin-top: 25px;
+  position: relative;
+}
+section .timeline > li:nth-child(1),
+section .timeline > li:nth-child(3) {
+  padding-right: calc(50% - 70.5px);
+  text-align: right;
+}
+section .timeline > li:nth-child(even) {
+  padding-left: calc(50% - 70.5px);
+  text-align: left;
+}
+section .timeline > li:nth-child(odd) dl{
+  margin-right: 151px;
+}
+section .timeline > li:nth-child(even) dl{
+  margin-left: 151px;
+}
+section .timeline img,
+section .timeline .circle {
+  width: 136px;
+  height: 136x;
+  border: 5px solid #f4f4f4;
+  border-radius: 68px
+}
+section .timeline .circle {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #f7b23e;
+  color: #fff;
+}
+section .timeline > li:nth-child(odd) img {
+  float:right;
+}
+section .timeline > li:nth-child(even) img {
+  float:left;
+}
+section .timeline dt,
+section .timeline dd:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+section .timeline>li::before {
+  content:'';
+  display: block;
+  height: 60px;
+  width: 2px;
+  background-color: #f4f4f4;
+  position: absolute;
+  left: 50%;
+  top: 133px;
+}
+section .timeline>li:last-child::before {
+  height:0;
+}
+section.team {
+  margin-top:70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+section .member {
+  display: flex;
+  justify-content: center;
+}
+section .member li {
+  margin: 50px;
+}
+section > .member img{
+  width: 230px;
+  height: 230px;
+  border: 3px solid #fff;
+  border-radius: 120px;
+}
+.team > p:last-child {
+  text-align: center;
+  padding: 0 140px;
+}
+.team > .member p{
+  margin-bottom: 30px;
+} 
+section > .member .iconfont {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #000;
+  margin: 0 6px;
+}
+main > .feedback {
+  height:100%;
+  width: 100%;
+  background: rgba(0,0,0,.45) url(http://ww1.sinaimg.cn/large/787b15a7gy1fz7ff172ooj21040jgtax.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+}
+.feedback input {
+  display: block;
+  width: 413px;
+  width: 455px;
+  height: 62px;
+  margin-top: 25px;
+  border-radius: 2px;
+}
+.feedback input:first-child {
+  margin-top: 0;
+}
+.feedback > .container > .user_info {
+  float: left;
+  margin-left: 25px;
+}
+.feedback > .container > .judgement {
+  float:right;
+  margin-right:25px;
+  width: 455px;
+  height: 236px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+}
+.feedback > .container #judgement {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.feedback > .contact > p {
+  font-size:16px;
+  color:#f7b23e;
+}
+main> .feedback .contact > h2 {
+  font-size:32px;
+  color:#f7b23e;
+  font-weight: bold;
+}
+main > .feedback > .container {
+  text-align: center;
+  margin-top: 70px;
+}
+.feedback > a {
+  margin-top: 30px;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+footer > div:nth-of-type(1) > span {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 18px;
+  margin: 0 5px;
+}
+footer > div:nth-of-type(2) a {
+  margin: 0 5px;
+  color: #f7b23e;
+}
+footer > div:nth-of-type(2) a:hover {
+  text-decoration: underline #f7b23e;
+}
+footer > span,
+footer > div {
+  margin: 0 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
