@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1711788_lwq1aq6i41.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>媒体查询demo</title>
+  <style>
+    /* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  list-style: none;
+}
+
+/* common css */
+.logo .iconfont {
+  font-size: 25px;
+}
+nav {
+  position: relative;
+}
+nav > button {
+  padding: 3px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+nav > .logo {
+  padding: 20px;
+}
+nav .nav {
+  box-shadow: 0 2px 4px 2px #eee;
+  position: absolute;
+  background-color:rgba(0, 40, 0, .3);
+  right: 22px;
+  top: 48px;
+  display: none;
+}
+nav > .nav.active {
+  display: block;
+}
+nav > .nav > li {
+  border: solid #fff;
+  border-width: 1px 1px 0 1px;
+  width: 50px;
+  padding: 2px;
+}
+nav .nav > li:last-child {
+  border-bottom: 1px solid #fff;
+}
+nav .nav-pc {
+  display: none;
+}
+@media (min-width: 451px) {
+  nav #menu {
+    display: none;
+  }
+  nav #mobile.active {
+    display: none;
+  }
+  nav .nav-pc {
+    display: block;
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-around;
+    margin-left: 45px;
+    margin-top: -50px;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><span class="iconfont icon-logo"></span></div>
+    <button id="menu">Menu</button>
+    <ul id="mobile" class="nav">
+      <li><a href="#">图片</a></li>
+      <li><a href="#">视频</a></li>
+      <li><a href="#">学术</a></li>
+      <li><a href="#">字典</a></li>
+      <li><a href="#">地图</a></li>
+    </ul>
+    <ul class="nav-pc">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Vue</a></li>
+        <li><a href="#">React</a></li>
+      </ul>
+    </nav>
+  <script>
+    menu.onclick = function() {
+      mobile.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
